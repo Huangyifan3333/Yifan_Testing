@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "elec390_Project_Oct_2020"

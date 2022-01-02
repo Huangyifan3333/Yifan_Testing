@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85C13E"
+    android:backgroundTint="#14D0E8"
+    tools:context=".plantActivity">
+
+    <ImageView
+        android:id="@+id/plantActImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toBottomOf="@+id/plantActNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/plantActNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="54dp"
+        android:gravity="center"
+        android:text="Plant Name"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/plantActDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="89dp"
+        android:text="Description"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_plantmois"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantActImageView" />
+
+    <TextView
+
+        android:id="@+id/MoistureLevelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="277dp"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="Moisture Level"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/NotificationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="36dp"
+        android:background="#CDDC39"
+        android:gravity="center"
+        android:text="Notification"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/deletePlantButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deletePlantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="41dp"
+        android:text="DELETE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/waterMyPlantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="41dp"
+        android:text="WATER"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewplantMoisture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_plantmois"
+        app:layout_constraintTop_toBottomOf="@+id/textView_plantmois" />
+
+    <TextView
+        android:id="@+id/textViewplantTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="23dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_planttemp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_planttemp" />
+
+    <TextView
+        android:id="@+id/textView_plantmois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#C6DCC7"
+        android:text="Humidity"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/MoistureLevelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/MoistureLevelTextView" />
+
+    <TextView
+        android:id="@+id/textView_planttemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="52dp"
+        android:background="#B4C326"
+        android:backgroundTint="#C2D134"
+        android:text="Temperature"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/MoistureLevelTextView"
+        app:layout_constraintTop_toBottomOf="@+id/MoistureLevelTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

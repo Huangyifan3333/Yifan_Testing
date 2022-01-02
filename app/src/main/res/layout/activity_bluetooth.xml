@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_Bluetooth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Configuration" />
+
+    <Button
+        android:id="@+id/button_Pair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+        android:text="Pair Bluetooth"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_Bluetooth"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#988080"
+        android:backgroundTint="#10AA9C"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Pair">
+
+        <TextView
+            android:id="@+id/textView_Moisture1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Humidity:"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView_Moisture2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="true"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView_Temperature1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature:"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView_Temperature2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_Time1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refreshing"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_Time2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 Seconds"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_Time3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20 Seconds"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_Time4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 Seconds"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_StopRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Reading"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button_Disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disconnect" />
+
+        <Button
+            android:id="@+id/button_Listen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refreshing"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

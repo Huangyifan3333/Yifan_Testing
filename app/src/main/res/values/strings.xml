@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">elec390_Project_Oct_2020</string>
+    <string name="plant_name">PLANT_NAME</string>
+    <string name="plant_description">PLANT_DESCRIPTION</string>
+    <string name="plant_image">PLANT_IMAGE</string>
+    <string name="plant_id">PLANT_ID</string>
+    <string name="plant_threshold">PLANT_THRESHOLD</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Bluetooth_Device_Address">Bluetooth Device Address</string>
+    <string name="Profile_Preference">Profile Preference</string>
+    <string name="Moisture_Data_String">Data String</string>
+    <string name="Temperature_Data_String">Data String</string>
+</resources>
